@@ -1,0 +1,50 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "height": 32,
+    "modules-left": [
+        "tray",
+        "memory",
+        "cpu",
+        "pulseaudio"
+    ],
+    "modules-center": [
+        "niri/window"
+    ],
+    "modules-right": [
+        "clock"
+    ],
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10,
+        "tooltip": false
+    },
+    "clock": {
+        "format": "{:%H:%M, %d %B %Y}",
+        "tooltip": false
+    },
+    "cpu": {
+        "format": "CPU: {usage}%",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "RAM: {}% ",
+        "tooltip": false
+    },
+    "niri/window": {
+        "format": "{}",
+        "rewrite": {
+            "(.*) - Nvim": "Currently editing $1",
+            "(.*) — Librewolf": "$1"
+        }
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "󰕾 {volume}% {format_source} ",
+        "format-muted": "󰖁 OFF {format_source} ",
+        "format-source": "  {volume}% ",
+        "format-source-muted": " 󰍭 {volume}%  ",
+        "on-click": "pavucontrol",
+        "tooltip": false
+    }
+}
