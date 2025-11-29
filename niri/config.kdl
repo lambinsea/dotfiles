@@ -155,7 +155,7 @@ binds {
 
     // Applications
 
-    Mod+U { spawn "alacritty"; }
+    Mod+U { spawn "kitty"; }
     Mod+I { spawn "fuzzel"; }
     Super+Alt+L { spawn "swaylock"; }
 
