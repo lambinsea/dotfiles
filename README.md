@@ -1,13 +1,12 @@
 # Dotfiles
 
 These are my configs for my Arch Linux setup. I have listed my core utility choices below:
-
-Window manager: [niri](https://github.com/YaLTeR/niri)
-Bar: [waybar](https://github.com/Alexays/Waybar)
-App launcher: [fuzzel](https://codeberg.org/dnkl/fuzzel)
-Shell: [fish](https://github.com/fish-shell/fish-shell)
-Terminal: [kitty](https://github.com/kovidgoyal/kitty)
-Editor: [neovim](https://github.com/neovim/neovim) using [AstroNvim](https://github.com/AstroNvim/AstroNvim)
+- Window manager: [niri](https://github.com/YaLTeR/niri)
+- Bar: [waybar](https://github.com/Alexays/Waybar)
+- App launcher: [fuzzel](https://codeberg.org/dnkl/fuzzel)
+- Shell: [fish](https://github.com/fish-shell/fish-shell)
+- Terminal: [kitty](https://github.com/kovidgoyal/kitty)
+- Editor: [neovim](https://github.com/neovim/neovim) using [AstroNvim](https://github.com/AstroNvim/AstroNvim)
 
 For additional configuration notes:
 - Reader: [zathura](https://github.com/pwmt/zathura)
