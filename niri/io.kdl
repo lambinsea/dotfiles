@@ -21,6 +21,6 @@ output "HDMI-A-2" { // DT secondary
 
 output "eDP-1" { // LN primary
     mode "1920x1200"
-    scale 1.25
+    scale 1 // default was 1.25
     transform "normal"
 }
