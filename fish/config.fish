@@ -1,9 +1,6 @@
 if status is-interactive # Commands to run in interactive sessions can go here
 end
 
-# purposeful
-alias todo="nvim ~/documents/todo" # do something that allows for more diachronic journalling
-
 # general aliases
 alias v=nvim
 alias c=clear
@@ -16,6 +13,9 @@ alias rm="rm -Iv"
 alias df="df -h"
 alias du="du -h -d 1"
 alias k="killall"
+
+alias yz="yazi"
+alias po="poweroff"
 
 # fun
 alias "hello"="echo hello :3"
