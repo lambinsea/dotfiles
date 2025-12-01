@@ -1,0 +1,26 @@
+input {
+    mouse {
+        accel-profile "flat"
+    } // I am vehemently against mouse acceleration
+    warp-mouse-to-focus
+}
+
+output "DP-1" { // DT primary
+    mode "1920x1080"
+    scale 1
+    transform "normal"
+    position x=0 y=0
+}
+
+output "HDMI-A-2" { // DT secondary
+    mode "1920x1080"
+    scale 1
+    transform "normal"
+    position x=1920 y=0
+}
+
+output "eDP-1" { // LN primary
+    mode "1920x1200"
+    scale 1.25
+    transform "normal"
+}

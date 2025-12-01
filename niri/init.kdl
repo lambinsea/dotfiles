@@ -1,0 +1,5 @@
+spawn-at-startup "waybar"
+spawn-sh-at-startup "fcitx5"
+spawn-sh-at-startup "easyeffects --gapplication-service"
+spawn-sh-at-startup "syncthing"
+spawn-sh-at-startup "swaybg -i /home/lambinsea/media/pictures/syoujo.jpeg"

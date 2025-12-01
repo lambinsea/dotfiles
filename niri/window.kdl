@@ -1,0 +1,28 @@
+// Window rules
+
+prefer-no-csd
+
+window-rule {
+    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    open-floating true
+}
+
+// Layer rules
+
+layer-rule {
+    match namespace="^wallpaper$"
+    place-within-backdrop true
+}
+
+layer-rule {
+    match namespace="^launcher$"
+    baba-is-float true
+}
+
+// Overview (goes with layer rules)
+
+overview {
+    workspace-shadow {
+        off
+    }
+}

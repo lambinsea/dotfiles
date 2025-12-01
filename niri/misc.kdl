@@ -1,0 +1,6 @@
+// Miscellaneous declarations
+
+screenshot-path "~/pictures/screenshots/%Y-%m-%d_%H-%M-%S.png"
+hotkey-overlay {
+  skip-at-startup
+}
