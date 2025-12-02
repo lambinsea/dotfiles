@@ -5,7 +5,6 @@
 ---@type LazySpec
 return {
   "AstroNvim/astrocommunity",
-  { import = "astrocommunity.colorscheme.catppuccin"},
   { import = "astrocommunity.git"},
   
   { import = "astrocommunity.pack.html-css"},

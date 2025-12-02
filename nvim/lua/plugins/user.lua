@@ -8,18 +8,23 @@ return {
   -- == Examples of Adding Plugins ==
 
   "andweeb/presence.nvim",
+  
   {
     "ray-x/lsp_signature.nvim",
     event = "BufRead",
     config = function() require("lsp_signature").setup() end,
   },
+  
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 
   {
     "lervag/vimtex",
     lazy = false,
     init = function()
-      vim.g.vimtex_view_method = "zathura"
-    end
+      vim.g.vimtex_view_method = 'zathura'
+      vim.g.vimtex_compiler_method = 'latexmk'
+      vim.g.maplocalleader = ','
+    end,
   },
 
   {

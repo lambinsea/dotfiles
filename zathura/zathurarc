@@ -4,6 +4,9 @@ set adjust-open               "width"
 set font                      "SauceCodePro NFM Normal 10"
 map i                         recolor
 
+set synctex                   true
+set synctex-editor-command    "nvr --remote-silent +%{line} %{input}"
+
 
 # Color
 
