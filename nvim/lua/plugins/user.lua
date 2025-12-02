@@ -13,7 +13,15 @@ return {
     event = "BufRead",
     config = function() require("lsp_signature").setup() end,
   },
-  
+
+  {
+    "lervag/vimtex",
+    lazy = false,
+    init = function()
+      vim.g.vimtex_view_method = "zathura"
+    end
+  },
+
   {
   "chomosuke/typst-preview.nvim",
   cmd = {"TypstPreview", "TypstPreviewtoggle", "TypstPreviewUpdate" },
@@ -27,7 +35,7 @@ return {
   },
   opts = {
       dependencies_bin = {
-        tinyumist = "tinymist",
+        tinymist = "tinymist",
       },
     },
   },
