@@ -12,3 +12,6 @@ For additional configuration notes:
 - Reader: [zathura](https://github.com/pwmt/zathura)
 - Fetch: [fastfetch](https://github.com/fastfetch-cli/fastfetch)
 - I have not yet learned how to make a good color scheme, so I've deferred that aspect of my system to the popular [Catppuccin-Mocha](https://github.com/catppuccin/catppuccin) color palette.
+
+Incomplete Tasks:
+- Replace AstroNvim with Lazy.nvim and Mason.nvim package managers
