@@ -5,12 +5,14 @@ binds {
     Mod+U { spawn "kitty"; }
     Mod+I { spawn "fuzzel"; }
     Mod+T { spawn "anki"; }
+    Mod+Y { spawn "qutebrowser"; }
 
     Mod+O repeat=false { toggle-overview; }
     Mod+M repeat=false { close-window; }
 
+
     Ctrl+Alt+Delete { quit; }
-    Mod+Shift+P { power-off-monitors; }
+    Mod+Shift+Delete { power-off-monitors; }
 
     /* Navigation and rearrangement */
 
