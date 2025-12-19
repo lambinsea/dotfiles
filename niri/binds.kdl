@@ -2,10 +2,10 @@ binds {
 
     /* Spawn and power */
 
-    Mod+U { spawn "kitty"; }
-    Mod+I { spawn "fuzzel"; }
-    Mod+T { spawn "anki"; }
-    Mod+Y { spawn "qutebrowser"; }
+    Mod+U repeat=false { spawn "kitty"; }
+    Mod+I repeat=false { spawn "fuzzel"; }
+    Mod+T repeat=false { spawn "anki"; }
+    Mod+Y repeat=false { spawn "qutebrowser"; }
 
     Mod+O repeat=false { toggle-overview; }
     Mod+M repeat=false { close-window; }
