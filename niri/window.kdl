@@ -26,3 +26,7 @@ overview {
         off
     }
 }
+
+recent-windows { // Overview exists
+    off
+}
