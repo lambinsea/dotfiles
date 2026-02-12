@@ -1,0 +1,20 @@
+#+title: GNU Emacs Configuration (wow this is super cool)
+#+author: Lambinsea
+
+*Introduction
+
+I'll probably defer writing a proper introduction until I have something substantial built up. After all, I wouldn't want to write some grandiose introduction for this project to be abandoned after a few weeks (tower of Babel reference (org-babel reference (nested parenthetical statements is an Emacs reference (I should probably stop at this point)))).
+
+
+*early-init.el
+
+#+begin_src emacs-lisp :tangle early-init.el
+
+(setq inhibit-startup-message t)
+
+(scroll-bar-mode -1)
+(tool-bar-mode -1)
+(tooltip-mode -1)
+(menu-bar-mode -1)
+  
+#+end_src

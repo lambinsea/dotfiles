@@ -1,5 +1,9 @@
 ;; Basic setup. How minimalist!
 
+(setq custom-file (locate-user-emacs-file "custom.el"))
+(load custom-file :no-error-if-file-is-missing)
+
+
 (setq inhibit-startup-message t)
 
 (scroll-bar-mode -1)
@@ -10,25 +14,30 @@
 (set-frame-font "Agave 14")
 (global-hl-line-mode t)
 
-;; Repositories?
+;; Repositories
 
 (require 'package)
+
+(package-initialize)
 (setq package-archives
       '(("gnu-elpa" . "https://elpa.gnu.org/packages/")
-	("nongnu" . "https://elpa.nongnu.org/nongnu/")
-	("melpa" . "https://melpa.org/packages/")))
+	("nongnu"   . "https://elpa.nongnu.org/nongnu/")
+	("melpa"    . "https://melpa.org/packages/")))
 
 (when (not package-archive-contents)
   (package-refresh-contents))
 
 ;; Packages
 
-(use-package nibelung-theme
-  :vc ( :url "https://github.com/veschin/nibelung-theme"
-	:rev :newest)
+(use-package doric-themes
   :ensure t
+  :demand nil
   :config
-  (load-theme 'nibelung-dark t))
+  (setq doric-themes-to-toggle '(doric-marble doric-obsidian))
+  (doric-themes-select 'doric-obsidian)
+  :bind
+  ("C-c i" . doric-themes-toggle))
+  
 
 (use-package frame
   :ensure nil
@@ -39,7 +48,7 @@
   (setq-default blink-cursor-delay 0.2)
 
   (define-minor-mode lamb/cursor-type-mode
-    "change"
+    "Change the cursor type to a horizontal bar"
     :init-value nil
     :global t
 
@@ -56,7 +65,7 @@
   (setq olivetti-style 'fancy)
 
   (define-minor-mode lamb/olivetti-mode
-    "test"
+    "Change the screen layout to a custom writing mode"
     :init-value nil
     :global nil
     (if lamb/olivetti-mode
@@ -73,26 +82,25 @@
 
 
 
+		
 ;; This is the path so far:
 ;; - olivetti config and keybindings
 ;; remove outdated packages/configs
 ;; writing mode to change fonts and make a minor mode out of it. use fontaine package
 ;; lazy loading
 
-;; 
 
-
-  
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- 
+ '(custom-safe-themes
+   '("205fb20894780bf7774d6425382153e7cf42f0e378b6d1c67eb5219f7fac9e4e"
+     default))
  '(package-selected-packages
-   '(command-log-mode counsel doom-modeline ef-themes frame
-		      nibelung-theme nord-theme olivetti))
+   '(command-log-mode counsel doric-themes frame nibelung-theme olivetti))
  '(package-vc-selected-packages
    '((nibelung-theme :url "https://github.com/veschin/nibelung-theme"))))
 (custom-set-faces
