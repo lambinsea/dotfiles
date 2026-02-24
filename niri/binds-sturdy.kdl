@@ -1,0 +1,66 @@
+binds {
+
+    /* Spawn and power */
+
+    Mod+F repeat=false { spawn "kitty"; }
+    Mod+O repeat=false { spawn "fuzzel"; }
+    Mod+P repeat=false { spawn "anki"; }
+    Mod+X repeat=false { spawn "qutebrowser"; }
+
+    Mod+U repeat=false { toggle-overview; }
+    Mod+H repeat=false { close-window; }
+
+
+    Ctrl+Alt+Delete { quit; }
+    Mod+Shift+Delete { power-off-monitors; }
+
+    /* Navigation and rearrangement */
+
+    Mod+Period     { focus-column-left; }
+    Mod+E     { focus-column-right; }
+    Mod+Ctrl+Period     { move-column-left; }
+    Mod+Ctrl+E     { move-column-right; }
+
+    Mod+N     { focus-window-or-workspace-down; }
+    Mod+A     { focus-window-or-workspace-up; }
+    Mod+Ctrl+N     { move-window-down-or-to-workspace-down; }
+    Mod+Ctrl+A     { move-window-up-or-to-workspace-up; }
+
+    Mod+S     { focus-monitor-left; }
+    Mod+R   { focus-monitor-right; }
+    Mod+Ctrl+S     { move-column-to-monitor-left; }
+    Mod+Ctrl+R     { move-column-to-monitor-right; }
+
+    /* Organization */
+
+    Mod+Apostrophe  { consume-window-into-column; }
+    Mod+Semicolon { expel-window-from-column; }
+
+    Mod+C { switch-preset-column-width; }
+    Mod+Shift+C { switch-preset-window-height; }
+    Mod+Ctrl+C { reset-window-height; }
+    Mod+D { maximize-column; }
+    Mod+Shift+D { fullscreen-window; }
+
+    Mod+G { center-column; }
+    Mod+Ctrl+G { center-visible-columns; }
+
+    Mod+Minus { set-column-width "-10%"; }
+    Mod+Equal { set-column-width "+10%"; }
+    Mod+Shift+Minus { set-window-height "-10%"; }
+    Mod+Shift+Equal { set-window-height "+10%"; }
+
+    Mod+W       { toggle-window-floating; }
+    Mod+Shift+W { switch-focus-between-floating-and-tiling; }
+    Mod+B { toggle-column-tabbed-display; }
+
+    /* Utils */
+
+    Mod+Backslash { screenshot; }
+    Ctrl+Print { screenshot-screen; }
+    Alt+Print { screenshot-window; }
+
+    // Misc.
+
+    Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
+}

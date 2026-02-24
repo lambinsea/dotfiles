@@ -1,4 +1,4 @@
-include "binds.kdl"
+include "binds-sturdy.kdl"
 include "layout.kdl"
 include "init.kdl"
 include "io.kdl"
